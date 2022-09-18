@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas de la CASA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+      <div class="h1eimg">
+        <h1>PIZZAS DE LA CASA</h1>
+        <img src="./pizza.png" class="logopizza" alt="logo-pizza">
+      </div>
+      <div class="divh2"><h2 class="h2facha">"Como las caseras de mamá"</h2></div>
+  
+      <div class="tipos-pizzas">
+        <h2>Aquí le dejamos nuestra variedad de pizzas con sus números para realizar el pedido...</h2>
+        <ul>
+          <li id="1">1- Pizza de verdeo.</li>
+          <li id="2">2- Pizza especial.</li>
+          <li id="3">3- Pizza de roquefort.</li>
+          <li id="4">4- Pizza de pepperoni.</li>
+          <li id="5">5- Pizza a la bolognesa.</li>
+          <li id="6">6- Pizza con salchicas.</li>
+        </ul>
+      </div>
+      
+      <form class="addForm">
+        <div class="pedido">
+          <h2>REALICE SU PEDIDO</h2>
+          <h4 class="h4form">
+            Se lo llevamos a su casa!
+          </h4>
+        </div>
+        <div class="div-inputs">
+          <label for="numeroPizza"></label>
+          <input type="number" placeholder="Número de pizza" name="numeroPizza" id="numeroPizza" />
+          <small></small>
+        </div>
+  
+        <div class="div-inputs">
+          <label for="cantidadPizzas"
+            ></label
+          >
+          <input
+            placeholder="Cantidad de pizzas"
+            type="number"
+            name="cantidadPizzas"
+            id="cantidadPizzas"
+            value="1"
+          />
+          <small></small>
+        </div>
+  
+        <div class="button-container">
+          <button type="submit" class="button-accept">Confirmar pedido</button>
+          <button type="button" class="delete-btn">Reiniciar el pedido</button>
+        </div>
+      </form>
+  
+      <div class="cardContainer">
+        
+        <!-- <div class="front">
+          <img src="./pizza-especial.jpg" alt="img-pizza">
+          <h2 class="nombreDeLaPizza">napoloitana</h2>
+          <h4 class="precioDeLaPizza">$50}}780 c/u</h4>
+          <div class="precioTotal">
+            <h3>Precio Total: $500</h3>
+          </div>
+        </div>
+        <div class="front">
+          <img src="./pizza-verdeo.jpg" alt="img-piza">
+          <h2 class="nombreDeLaPizza">bolognesa</h2>
+          <h4 class="precioDeLaPizza">$810 c/u</h4>
+          <div class="precioTotal">
+            <h3>Precio Total: $500</h3>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <footer>Hecho con 💛 en Nucba || Diseño y desarrollo: Alejo Serra</footer>
+    <script src="main.js"></script>
+  </body>
+  </html>

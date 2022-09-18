@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(175, 175, 175);
+}
+
+.h1eimg{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    gap: 20px;
+}
+
+.logopizza{
+    height: 50px;
+}
+
+.h2facha{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 25px;
+}
+
+.tipos-pizzas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.tipos-pizzas li{
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(83, 83, 83);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.addForm{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./fondo-formulario.jpg);
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.div-inputs{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addForm input{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 392px){
+    .addForm input{
+        font-size: 18px;
+    }
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(80, 45, 45);
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;  
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.pedido h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.h4form{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: rgb(219, 85, 85);
+}
+
+.ingredientes{
+    display: none;
+    width: 100%;
+}
+
+.front:hover .ingredientes{
+    display: flex;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(12, 21, 45);
+    color: aliceblue;
+    max-height: 60px;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombrePizza{
+    font-size: 20px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+.imgDeLaPizza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.precioTotal {
+    background-color: beige;
+    width: 100%;
+    padding: 5px;
+    color: #242424;
+    text-align: center;
+}
+
+.error {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+small {
+    font-size: 15px;
+}
+
+.hidden{
+    display: none;
+}
+.delete-btn{
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15PX;
+    background-color: rgb(255, 242, 227);
+    color: black;
+    box-shadow: 3px 6px 9px 0px white;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 1s;
+    margin-top: 20px;
+}
+
+.delete-btn:hover{
+    color: white;
+    background-color: red;
+}
+
+.button-accept{
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15PX;
+    background-color: rgb(255, 242, 227);
+    color: black;
+    box-shadow: 3px 6px 9px 0px white;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 1s;
+    margin-top: 20px;
+}
+
+.button-accept:hover{
+    color: aliceblue;
+    background-color: green;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: azure;
+    padding: 20px;
+    margin-top: 20px;
+}
